@@ -1,5 +1,5 @@
 # 🛡️ PhishNet — AI-Powered Phishing Detection & URL Scanner Tool
-![PhishNet Banner](/static/img/home.png)
+![PhishNet Banner](/static/img/Home.png)
 PhishNet is a web-based tool designed to detect and warn users about suspicious or potentially harmful URLs. It’s part of our ongoing mission to combat phishing and online scams using intelligent automation, powered by AI and Machine Learning to analyze web content, URL behavior, and detect phishing patterns more accurately.
 
 ---
