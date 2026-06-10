@@ -26,13 +26,13 @@ PhishNet is a web-based tool designed to detect and warn users about suspicious 
 
 ### ScreenShots
 
- ![PhishNet Banner](/static/img/Home-2.png) 
+## ![PhishNet Banner](/static/img/Home-2.png) 
 
 
- ![PhishNet Banner](/static/img/Home-3.png)
+## ![PhishNet Banner](/static/img/Home-3.png)
 
 
- ![PhishNet Banner](/static/img/Home-4.png)
+## ![PhishNet Banner](/static/img/Home-4.png)
 
  ![PhishNet Banner](/static/img/Home-5.png)
 
