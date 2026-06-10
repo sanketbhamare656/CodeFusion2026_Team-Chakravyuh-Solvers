@@ -34,12 +34,12 @@ PhishNet is a web-based tool designed to detect and warn users about suspicious 
 
 ## ![PhishNet Banner](/static/img/Home-4.png)
 
- ![PhishNet Banner](/static/img/Home-5.png)
+## ![PhishNet Banner](/static/img/Home-5.png)
 
 
- ![PhishNet Banner](/static/img/Home-6.png)
+## ![PhishNet Banner](/static/img/Home-6.png)
 
- ![PhishNet Banner](/static/img/Home-7.png)
+## ![PhishNet Banner](/static/img/Home-7.png)
 
 ## 📦 How to Run the Project Locally
 - The latest `top-1m.csv` can be downloaded from Tranco List(https://tranco-list.eu/) (this CSV is updated every month). 
