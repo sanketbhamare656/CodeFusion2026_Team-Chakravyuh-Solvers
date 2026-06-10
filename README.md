@@ -11,7 +11,7 @@ PhishNet is a web-based tool designed to detect and warn users about suspicious 
 
 ---
 ### Demo Video
-- https://youtu.be/oXZewQhu7u0
+- [[https://youtu.be/oXZewQhu7u0](https://youtu.be/k3tJgeklwfk)]
 
 ### PPT (Google Drive)
 - https://docs.google.com/presentation/d/1bbXIMMhH1BKsZJV8bAPLOV2QD7iQrtvU/edit?usp=sharing&ouid=113191716539863542421&rtpof=true&sd=true
@@ -26,20 +26,20 @@ PhishNet is a web-based tool designed to detect and warn users about suspicious 
 
 ### ScreenShots
 
- ![PhishNet Banner](/static/img/home-2.png) 
+ ![PhishNet Banner](/static/img/Home-2.png) 
 
 
- ![PhishNet Banner](/static/img/home-3.png)
+ ![PhishNet Banner](/static/img/Home-3.png)
 
 
- ![PhishNet Banner](/static/img/home-4.png)
+ ![PhishNet Banner](/static/img/Home-4.png)
 
- ![PhishNet Banner](/static/img/home-5.png)
+ ![PhishNet Banner](/static/img/Home-5.png)
 
 
- ![PhishNet Banner](/static/img/home-6.png)
+ ![PhishNet Banner](/static/img/Home-6.png)
 
- ![PhishNet Banner](/static/img/home-7.png)
+ ![PhishNet Banner](/static/img/Home-7.png)
 
 ## 📦 How to Run the Project Locally
 - The latest `top-1m.csv` can be downloaded from Tranco List(https://tranco-list.eu/) (this CSV is updated every month). 
