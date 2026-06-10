@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block title %}PhishNet - Cyber Guard User Manual{% endblock %}
+
+{% block content %}
+<section class="features manual-page" style="padding: 60px 0;">
+    <div class="container" style="max-width: 1100px;">
+
+        <!-- Header -->
+        <div class="manual-header">
+            <h1 class="section-title">
+                <i class="fas fa-book"></i>
+                PhishNet <span class="gradient-text">User Manual</span>
+            </h1>
+
+            <p style="margin-top: 15px;">
+                Learn how to stay protected from phishing attacks using PhishNet’s intelligent security tools
+            </p>
+        </div>
+
+        <!-- Sections -->
+
+        <!-- URL Checker -->
+        <div class="manual-card">
+            <h3><i class="fas fa-link"></i> URL Checker</h3>
+
+            <p>
+                Analyze suspicious URLs and detect phishing threats instantly.
+            </p>
+
+            <ol>
+                <li>Go to the <a href="{{ url_for('url_service') }}">URL Checker page</a></li>
+                <li>Enter the suspicious URL in the input field</li>
+                <li>Click the <strong>Verify URL</strong> button</li>
+                <li>Review the generated safety report, trust score, and details</li>
+            </ol>
+
+            <div class="manual-tip">
+                <i class="fas fa-lightbulb" style="color: var(--primary);"></i>
+                <span>Always verify unknown or unexpected links before clicking them!</span>
+            </div>
+        </div>
+
+        <!-- News -->
+        <div class="manual-card">
+            <h3><i class="fas fa-newspaper"></i> Cybersecurity News</h3>
+
+            <p>
+                Stay updated with the latest cybersecurity threats and alerts.
+            </p>
+
+            <ul>
+                <li>Real-time security threat updates</li>
+                <li>Important global cybersecurity breaches</li>
+                <li>Latest phishing campaign alerts & trends</li>
+            </ul>
+        </div>
+
+        <!-- Chatbot -->
+        <div class="manual-card">
+            <h3><i class="fas fa-robot"></i> CyberGuard AI Chatbot</h3>
+
+            <p>
+                Get AI-powered cybersecurity guidance and support in real-time.
+            </p>
+
+            <ul>
+                <li>Ask questions about scams, frauds, and social engineering attempts</li>
+                <li>Receive smart recommendations to keep your credentials secure</li>
+                <li>Get direct access to emergency lines and reporting portals</li>
+            </ul>
+        </div>
+
+        <!-- Extension -->
+        <div class="manual-card">
+            <h3><i class="fas fa-puzzle-piece"></i> Browser Extension</h3>
+
+            <p>
+                Browse safely with automatic real-time phishing detection.
+            </p>
+
+            <ul>
+                <li>Automatic backend scanner validation of active URLs</li>
+                <li>Instant popup alerts upon encountering malicious sites</li>
+                <li>Continuous, lightweight layer of browsing protection</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+{% endblock %}

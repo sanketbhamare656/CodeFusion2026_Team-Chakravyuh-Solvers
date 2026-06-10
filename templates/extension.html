@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+
+{% block title %}PhishNet - Safe Browsing Tools & Extensions{% endblock %}
+
+{% block content %}
+<section class="features" style="padding: 60px 0;">
+    <div class="container">
+
+        <!-- ================= EXTENSION ================= -->
+        <h2 class="section-title">
+            PhishNet <span class="gradient-text">Browser Extension</span>
+        </h2>
+
+        <div class="feature-card" style="max-width: 1100px; margin: 0 auto 60px; padding: 40px;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; align-items: center;">
+                <div>
+                    <h3 style="font-size: 28px; margin-bottom: 25px; color: var(--primary);">
+                        <i class="fas fa-shield-alt"></i> Real-Time Protection
+                    </h3>
+
+                    <p style="opacity: 0.8; margin-bottom: 30px; line-height: 1.7;">
+                        Browse safely with PhishNet’s lightweight security extension.
+                        Instantly detect phishing sites, malicious URLs, and suspicious pages
+                        before they can harm your data.
+                    </p>
+
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 18px; display: flex; align-items: center;">
+                            <i class="fas fa-search" style="color: var(--primary); margin-right: 12px; width: 20px; text-align: center;"></i>
+                            <span>Instant URL threat analysis</span>
+                        </li>
+
+                        <li style="margin-bottom: 18px; display: flex; align-items: center;">
+                            <i class="fas fa-bell" style="color: var(--primary); margin-right: 12px; width: 20px; text-align: center;"></i>
+                            <span>Smart real-time danger alerts</span>
+                        </li>
+
+                        <li style="margin-bottom: 18px; display: flex; align-items: center;">
+                            <i class="fas fa-lock" style="color: var(--primary); margin-right: 12px; width: 20px; text-align: center;"></i>
+                            <span>Extra browsing security layer</span>
+                        </li>
+
+                        <li style="margin-bottom: 18px; display: flex; align-items: center;">
+                            <i class="fas fa-plug" style="color: var(--primary); margin-right: 12px; width: 20px; text-align: center;"></i>
+                            <span>Seamless browser integration</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div style="text-align: center;">
+                    <img src="{{ url_for('static', filename='img/extension.png') }}"
+                         alt="Extension Preview"
+                         style="width: 100%; max-width: 230px; 
+                                border-radius: 15px;
+                                border: 1px solid rgba(0,240,255,0.2);
+                                box-shadow: 0 0 30px rgba(0,240,255,0.15);
+                                transition: transform 0.3s ease;">
+                    <p style="margin-top: 15px; opacity: 0.6; font-size: 14px;">
+                        PhishNet extension in action
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= TELEGRAM BOT ================= -->
+        <h2 class="section-title">
+            PhishNet <span class="gradient-text">Telegram Bot</span>
+        </h2>
+
+        <div class="feature-card" style="max-width: 1100px; margin: 0 auto 60px; padding: 40px;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; align-items: center;">
+                <div>
+                    <h3 style="font-size: 28px; margin-bottom: 25px; color: var(--primary);">
+                        <i class="fab fa-telegram"></i> Instant Threat Checks
+                    </h3>
+
+                    <p style="opacity: 0.8; margin-bottom: 30px; line-height: 1.7;">
+                        Stay protected directly inside Telegram with the PhishNet security bot.
+                        Quickly analyze suspicious links, detect phishing attempts, and receive
+                        real-time risk insights without leaving your chat.
+                    </p>
+
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 18px; display: flex; align-items: center;">
+                            <i class="fas fa-link" style="color: var(--primary); margin-right: 12px; width: 20px; text-align: center;"></i>
+                            <span>Instant URL safety analysis</span>
+                        </li>
+
+                        <li style="margin-bottom: 18px; display: flex; align-items: center;">
+                            <i class="fas fa-exclamation-triangle" style="color: var(--primary); margin-right: 12px; width: 20px; text-align: center;"></i>
+                            <span>Smart phishing & scam detection</span>
+                        </li>
+
+                        <li style="margin-bottom: 18px; display: flex; align-items: center;">
+                            <i class="fas fa-bolt" style="color: var(--primary); margin-right: 12px; width: 20px; text-align: center;"></i>
+                            <span>Real-time threat intelligence</span>
+                        </li>
+
+                        <li style="margin-bottom: 18px; display: flex; align-items: center;">
+                            <i class="fas fa-shield-alt" style="color: var(--primary); margin-right: 12px; width: 20px; text-align: center;"></i>
+                            <span>Fast & lightweight responses</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div style="text-align: center;">
+                    <img src="{{ url_for('static', filename='img/phishnet-logo copy.png') }}"
+                         alt="Telegram Bot Preview"
+                         style="width: 100%; max-width: 230px; 
+                                border-radius: 15px;
+                                border: 1px solid rgba(0,240,255,0.2);
+                                box-shadow: 0 0 30px rgba(0,240,255,0.15);
+                                transition: transform 0.3s ease;">
+                    <p style="margin-top: 15px; opacity: 0.6; font-size: 14px;">
+                        PhishNet bot in action
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="feature-card" style="max-width: 900px; margin: 0 auto; text-align: center; padding: 40px;">
+            <h3 style="font-size: 26px; margin-bottom: 15px; color: var(--light);">
+                <i class="fas fa-rocket"></i> Choose Your Protection
+            </h3>
+
+            <p style="opacity: 0.7; margin-bottom: 35px;">
+                Use PhishNet on browser & Telegram for comprehensive threat coverage
+            </p>
+
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <a href="#" class="btn btn-primary">
+                    <i class="fab fa-chrome"></i> Browser Extension
+                </a>
+
+                <a href="https://t.me/your_bot_username" class="btn btn-outline" target="_blank">
+                    <i class="fab fa-telegram"></i> Telegram Bot
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+{% endblock %}

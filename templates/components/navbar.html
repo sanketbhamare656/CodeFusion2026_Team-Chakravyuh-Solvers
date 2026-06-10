@@ -1,0 +1,20 @@
+<header>
+    <div class="container">
+        <nav>
+            <a href="{{ url_for('home') }}" class="logo">
+                <i class="fas fa-shield-alt"></i> PHISHNET
+            </a>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('url_service') }}">URL Scanner</a></li>
+                <li><a href="{{ url_for('newsletter') }}">Newsletter</a></li>
+                <li><a href="{{ url_for('chat') }}">ChatBot</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('extension') }}">Tools</a></li>
+            </ul>
+            <button class="mobile-menu-btn" onclick="toggleNavbar()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </div>
+</header>

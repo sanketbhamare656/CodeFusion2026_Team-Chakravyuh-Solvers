@@ -1,0 +1,179 @@
+{% extends "base.html" %}
+
+{% block title %}PhishNet - AI-Powered Phishing Detection{% endblock %}
+
+{% block content %}
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="floating-elements">
+            <div class="floating-element" style="width: 300px; height: 300px; top: 20%; left: 10%;"></div>
+            <div class="floating-element" style="width: 200px; height: 200px; top: 60%; left: 70%;"></div>
+            <div class="floating-element" style="width: 150px; height: 150px; top: 30%; left: 80%;"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>AI-Powered <span class="gradient-text">Phishing Detection</span></h1>
+                    <p>Protect your digital assets with our advanced machine learning algorithms that detect and prevent
+                        phishing attempts in real-time. Stay one step ahead of cybercriminals.</p>
+                    <div class="hero-buttons">
+                        <a href="{{ url_for('url_service') }}" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i> Try Live Demo
+                        </a>
+                        <a href="#features" class="btn btn-outline">
+                            <i class="fas fa-search"></i> Explore Features
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">98.6%</div>
+                            <div class="stat-label">Detection Rate</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">0.13s</div>
+                            <div class="stat-label">Response Time</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-label">URL Tested</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-image-inner">
+                        <img src="{{ url_for('static', filename='img/icon3d-removebg-preview.png') }}"
+                             alt="AI Security Illustration" style="transform: scaleX(-1);">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Our <span class="gradient-text">Innovative</span> Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Real-time URL Analysis</h3>
+                    <p>Our advanced algorithms scan URLs in milliseconds to detect phishing attempts, malicious scripts,
+                        and suspicious patterns before they can cause harm.</p>
+                    <a href="{{ url_for('url_service') }}" class="feature-link">
+                        Try it now <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Source Code Extraction</h3>
+                    <p>Our backend can analyze the HTML source of a site to detect hidden or suspicious elements.</p>
+                    <a href="{{ url_for('url_service') }}" class="feature-link">
+                        Try it now <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Web Live Preview</h3>
+                    <p>Users will soon be able to preview how a site looks before actually visiting it — without risk.
+                    </p>
+                    <a href="{{ url_for('url_service') }}" class="feature-link">
+                        Chat with AI <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI Cyber Assistant</h3>
+                    <p>Get instant answers to your cybersecurity questions from our trained AI model that understands
+                        the latest threats and protection techniques.</p>
+                    <a href="{{ url_for('chat') }}" class="feature-link">
+                        Chat with AI <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <h3>Security Newsletter</h3>
+                    <p>Stay updated with the latest cybersecurity threats, trends, and protection strategies curated by
+                        our team of experts.</p>
+                    <a href="{{ url_for('newsletter') }}" class="feature-link">
+                        Subscribe now <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chrome"></i>
+                    </div>
+                    <h3>Browser Extension</h3>
+                    <p>Get real-time protection as you browse with our lightweight extension that warns you before
+                        visiting dangerous websites.</p>
+                    <a href="{{ url_for('extension') }}" class="feature-link">
+                        Get extension <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Telegram Bot Protection</h3>
+                    <p>
+                        Instantly analyze suspicious links directly inside Telegram.
+                        Our PhishNet bot provides real-time threat detection, phishing checks,
+                        and smart risk insights without leaving your chat.
+                    </p>
+                    <a href="#" class="feature-link">
+                        Comming Soon <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About <span class="gradient-text">PhishNet</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>PhishNet was born out of a hackathon challenge to combat the rising tide of sophisticated
+                        phishing attacks that traditional security measures struggle to detect. Our team of
+                        cybersecurity enthusiasts and machine learning experts came together to create a solution that
+                        leverages cutting-edge AI to stay ahead of evolving threats.</p>
+                    <p>What sets us apart is our multi-layered detection approach that combines URL analysis, content
+                        inspection, behavioral patterns, and real-time threat intelligence to provide comprehensive
+                        protection against phishing attempts.</p>
+                    <p>Our mission is to make advanced cybersecurity accessible to everyone, from individual users to
+                        large enterprises, without compromising on performance or usability.</p>
+                    <a href="{{ url_for('about') }}" class="btn btn-primary" style="margin-top: 30px;">
+                        <i class="fas fa-info-circle"></i> Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <h2>Ready to Transform Your Cybersecurity?</h2>
+            <p>Join thousands of users and organizations who trust PhishNet to protect their digital assets from
+                sophisticated phishing attacks.</p>
+            <div style="display: flex; gap: 20px; justify-content: center;">
+                <a href="{{ url_for('url_service') }}" class="btn btn-primary" style="margin-top: 20px;">
+                    <i class="fas fa-rocket"></i> Try Live Demo
+                </a>
+                <a href="{{ url_for('about') }}" class="btn btn-outline" style="margin-top: 20px;">
+                    <i class="fas fa-users"></i> Read Manual
+                </a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

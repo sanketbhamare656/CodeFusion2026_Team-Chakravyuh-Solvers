@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+    
+    <title>{% block title %}PhishNet{% endblock %}</title>
+    
+    <meta name="description" content="PhishNet - An AI-powered phishing domain detection tool protecting your digital assets.">
+    <meta name="og:title" property="og:title" content="PhishNet">
+    <meta name="keywords" content="PhishNet, phishing, cyber security, AI detection, link scanner">
+    <meta name="author" content="Sanket Bhamare">
+    <meta name="robots" content="index, follow">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="log-container"></div>
+    </div>
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Unified Navbar Header -->
+    {% include 'components/navbar.html' %}
+
+    <!-- Page Content Wrapper -->
+    <div class="content-wrap">
+        {% block content %}{% endblock %}
+        
+        <!-- Unified Footer -->
+        {% include 'components/footer.html' %}
+    </div>
+
+    <!-- Global Javascript libraries -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+</body>
+
+</html>

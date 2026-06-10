@@ -1,0 +1,4 @@
+phishnet/lib/
+*.so
+*.pyc
+__pycache__/

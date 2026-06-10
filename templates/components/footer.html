@@ -1,0 +1,10 @@
+{% if '/preview' not in request.path %}
+<footer>
+    <div class="container footer-container">
+        <a href="{{ url_for('home') }}" class="logo footer-logo-link">
+            <i class="fas fa-shield-alt"></i> PHISHNET
+        </a>
+        <p class="copyright">&copy; Developed by Team Chakravyuh Solvers </p>
+    </div>
+</footer>
+{% endif %}
